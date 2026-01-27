@@ -1,13 +1,17 @@
-const themeToggle = document.getElementById('theme-toggle');
-const htmlElement = document.documentElement;
+document.addEventListener('DOMContentLoaded', () => {
+  const themeToggle = document.getElementById('theme-toggle');
+  const htmlElement = document.documentElement;
 
-const currentTheme = localStorage.getItem('theme') || 'light';
-htmlElement.setAttribute('data-theme', currentTheme);
+  function setTheme(theme) {
+    localStorage.setItem('theme', theme);
+    htmlElement.setAttribute('data-theme', theme);
+  }
 
-themeToggle.addEventListener('click', () => {
-  const currentTheme = htmlElement.getAttribute('data-theme');
-  const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+  function switchTheme() {
+    const currentTheme = localStorage.getItem('theme');
+    setTheme(currentTheme === 'light' ? 'dark' : 'light');
+  }
 
-  htmlElement.setAttribute('data-theme', newTheme);
-  localStorage.setItem('theme', newTheme);
-});
+  themeToggle.onclick = () => switchTheme();
+  setTheme(localStorage.getItem('theme') || 'light');
+})

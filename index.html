@@ -1,42 +1,18 @@
 ---
-layout: default
-title: Home
+layout: home
 ---
 
 <div class="hero">
   <h1>¡Bienvenido a Tu-paso-a-paso!</h1>
-  <p class="hero-subtitle">Learn Spanish step by step - Aprende español paso a paso</p>
+  <p class="hero-subtitle">Learn Spanish step by step</p>
 </div>
 
 <div class="categories-grid">
-  <div class="category-card">
-    <h2>📚 Basics</h2>
-    <p>Start your Spanish journey with fundamental concepts</p>
-    <a href="/basics/" class="btn">Explore Basics</a>
-  </div>
-
-  <div class="category-card">
-    <h2>📖 Grammar</h2>
-    <p>Master Spanish grammar rules and structures</p>
-    <a href="/grammar/" class="btn">Learn Grammar</a>
-  </div>
-
-  <div class="category-card">
-    <h2>💬 Vocabulary</h2>
-    <p>Expand your Spanish vocabulary</p>
-    <a href="/vocabulary/" class="btn">Build Vocabulary</a>
-  </div>
-</div>
-
-<div class="recent-posts">
-  <h2>Recent Posts</h2>
-  <div class="posts-list">
-    {% for post in site.posts limit:6 %}
-      <article class="post-preview">
-        <span class="post-category">{{ post.categories | first }}</span>
-        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-        <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
-      </article>
-    {% endfor %}
-  </div>
+  {% for category in site.data.categories %}
+      <div class="category-card">
+        <h2>{{ category.full-title }}</h2>
+        <p>{{ category.info }}</p>
+        <a href="{{ category.link }}" class="btn">Explore</a>
+      </div>
+  {% endfor %}
 </div>

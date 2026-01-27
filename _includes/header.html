@@ -5,10 +5,9 @@
     </div>
 
     <ul class="nav-menu">
-      <li><a href="{{ '/' | relative_url }}">Home</a></li>
-      <li><a href="{{ '/basics/' | relative_url }}">Basics</a></li>
-      <li><a href="{{ '/grammar/' | relative_url }}">Grammar</a></li>
-      <li><a href="{{ '/vocabulary/' | relative_url }}">Vocabulary</a></li>
+      {% for category in site.data.categories %}
+        <li><a href="{{ category.link | relative_url }}">{{ category.title }}</a></li>
+      {% endfor %}
     </ul>
 
     <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
