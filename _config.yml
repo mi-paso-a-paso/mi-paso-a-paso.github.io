@@ -2,7 +2,7 @@ title: Tu-paso-a-paso
 description: Learn Spanish step by step
 lang: "bg"
 baseurl: ""
-url: ""
+url: "https://mi-paso-a-paso.github.io"
 
 markdown: kramdown
 permalink: /:categories/:title # :output_ext
