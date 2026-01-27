@@ -14,7 +14,7 @@ layout: default
 
   <!-- {{ content }} -->
   
-  <div class="categories-grid">
+  <div class="columns-grid">
     {% assign cat_filter = page.title | downcase %}
     {% assign cat_posts = site.posts | where: "categories", cat_filter | sort: "date" %}
     {% for post in cat_posts %}

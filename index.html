@@ -3,16 +3,16 @@ layout: home
 ---
 
 <div class="hero">
-  <h1>¡Bienvenido a Tu-paso-a-paso!</h1>
+  <h1>¡Bienvenido a {{ site.title }}!</h1>
   <p class="hero-subtitle">Learn Spanish step by step</p>
 </div>
 
-<div class="categories-grid">
+<div class="columns-grid">
   {% for category in site.data.categories %}
-      <div class="category-card">
-        <h2>{{ category.full-title }}</h2>
-        <p>{{ category.info }}</p>
-        <a href="{{ category.link }}" class="btn">Explore</a>
-      </div>
+    <div class="grid-card">
+      <h2>{{ category.full-title }}</h2>
+      <p>{{ category.info }}</p>
+      <a href="{{ category.link }}" class="btn">Explore</a>
+    </div>
   {% endfor %}
 </div>

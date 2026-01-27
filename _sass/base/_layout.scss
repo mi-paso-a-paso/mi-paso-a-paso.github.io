@@ -1,0 +1,51 @@
+/* Layout of the page */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.6;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  padding-bottom: 0;
+  min-height: calc(100vh - 200px);
+}
+
+%button-form {
+  display: inline-block;
+  background-color: var(--accent);
+  color: white;
+  font-weight: 600;
+}
+
+.btn {
+  @extend %button-form;
+
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  
+  &:hover {
+    background-color: var(--accent-hover);
+  }
+}
+
+.footer {
+  background-color: var(--card-bg);
+  border-top: 1px solid var(--border);
+  text-align: center;
+  padding: 2rem;
+  margin-top: 4rem;
+  color: var(--text-secondary);
+}

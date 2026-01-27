@@ -4,14 +4,16 @@ layout: default
 
 {{ content }}
 
-<h2>Recent Posts</h2>
-
-<div class="categories-grid">
-    {% for post in site.posts limit:6 %}
-      <article class="post-preview">
-        <span class="post-category">{{ post.categories | first }}</span>
-        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-        <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
-      </article>
-    {% endfor %}
+<div class="recent-posts">
+  <h2>Recent Posts</h2>
+  
+  <div class="columns-grid">
+      {% for post in site.posts limit:6 %}
+        <article class="post-preview">
+          <span class="post-category">{{ post.categories | first }}</span>
+          <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+          <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
+        </article>
+      {% endfor %}
+  </div>
 </div>
