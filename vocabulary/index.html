@@ -1,0 +1,22 @@
+---
+layout: default
+title: Vocabulary
+---
+
+<div class="category-page">
+  <header class="category-header">
+    <h1>💬 Vocabulary</h1>
+    <p>Expand your Spanish vocabulary with essential words and phrases</p>
+  </header>
+
+  <div class="posts-list">
+    {% assign vocabulary_posts = site.posts | where: "categories", "vocabulary" | sort: "date" %}
+    {% for post in vocabulary_posts %}
+      <article class="post-preview">
+        <span class="post-category">vocabulary</span>
+        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
+      </article>
+    {% endfor %}
+  </div>
+</div>

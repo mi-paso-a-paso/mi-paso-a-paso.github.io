@@ -1,0 +1,28 @@
+title: Tu-paso-a-paso
+description: Learn Spanish step by step
+baseurl: ""
+url: ""
+
+markdown: kramdown
+permalink: /:categories/:year/:month/:day/:title:output_ext
+
+collections:
+  posts:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
