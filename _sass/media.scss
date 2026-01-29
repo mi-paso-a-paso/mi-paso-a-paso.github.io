@@ -6,15 +6,15 @@
 
   .nav-menu {
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 15px;
   }
 
   .hero h1 {
-    font-size: 2rem;
+    font-size: 32px;
   }
 
   .hero-subtitle {
-    font-size: 1rem;
+    font-size: 15px;
   }
 
   .columns-grid {
@@ -22,10 +22,10 @@
   }
 
   .post {
-    padding: 1.5rem;
+    padding: 24px;
   }
 
   .post-header h1 {
-    font-size: 1.75rem;
+    font-size: 28px;
   }
 }

@@ -11,14 +11,14 @@
   .top-nav {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 1rem 2rem;
+    padding: 15px 32px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 2rem;
+    gap: 32px;
     
     .nav-brand a {
-      font-size: 1.5rem;
+      font-size: 24px;
       font-weight: 700;
       color: var(--accent);
       text-decoration: none;
@@ -27,7 +27,7 @@
     .nav-menu {
       display: flex;
       list-style: none;
-      gap: 2rem;
+      gap: 32px;
       flex: 1;
       
       a {

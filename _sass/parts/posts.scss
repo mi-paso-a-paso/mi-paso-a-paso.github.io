@@ -3,21 +3,21 @@
 .post-category {
   @extend %button-form;
 
-  padding: 0.25rem 0.75rem;
+  padding: 4px 12px;
   border-radius: 4px;
-  font-size: 0.875rem;
+  font-size: 14px;
   text-transform: capitalize;
-  margin-bottom: 0.5rem;
+  margin-bottom: 8px;
 }
 
 .post-date {
   color: var(--text-secondary);
-  font-size: 0.875rem;
+  font-size: 14px;
 }
 
 article.post-preview {
   background: var(--card-bg);
-  padding: 1.5rem;
+  padding: 24px;
   border-radius: 8px;
   border: 1px solid var(--border);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -30,7 +30,7 @@ article.post-preview {
   }
   
   h3 {
-    margin: 0.5rem 0;
+    margin: 8px 0;
     
     a {
       color: var(--text-primary);
@@ -46,52 +46,52 @@ article.post-preview {
 
 article.post {
   background: var(--card-bg);
-  padding: 3rem;
+  padding: 48px;
   border-radius: 12px;
   border: 1px solid var(--border);
   max-width: 800px;
   margin: 0 auto;
   
   .post-header {
-    margin-bottom: 2rem;
-    padding-bottom: 2rem;
+    margin-bottom: 32px;
+    padding-bottom: 32px;
     border-bottom: 2px solid var(--border);
     
     h1 {
-      font-size: 2.5rem;
+      font-size: 40px;
       color: var(--text-primary);
-      margin: 1rem 0;
+      margin: 15px 0;
     }
   }
   
   .post-content {
-    font-size: 1.125rem;
+    font-size: 18px;
     line-height: 1.8;
     
     h2 {
       color: var(--text-primary);
-      margin: 2rem 0 1rem;
-      font-size: 1.75rem;
+      margin: 32px 0 15px;
+      font-size: 28px;
     }
     
     h3 {
       color: var(--text-primary);
-      margin: 1.5rem 0 0.75rem;
-      font-size: 1.5rem;
+      margin: 24px 0 12px;
+      font-size: 24px;
     }
     
     p {
-      margin-bottom: 1rem;
+      margin-bottom: 15px;
       color: var(--text-primary);
     }
     
     ul, ol {
-      margin: 1rem 0 1rem 2rem;
+      margin: 15px 0 15px 32px;
       color: var(--text-primary);
     }
     
     li {
-      margin-bottom: 0.5rem;
+      margin-bottom: 8px;
     }
     
     strong {
@@ -101,15 +101,15 @@ article.post {
     
     code {
       background: var(--bg-secondary);
-      padding: 0.2rem 0.4rem;
+      padding: 3.2px 6.4px;
       border-radius: 4px;
       font-family: 'Courier New', monospace;
     }
   }
   
   .post-footer {
-    margin-top: 3rem;
-    padding-top: 2rem;
+    margin-top: 48px;
+    padding-top: 32px;
     border-top: 2px solid var(--border);
     
     .back-link {
