@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Comparatives - Los Comparativos"
-date: 2024-02-07
+date: 2026-01-11
 categories: grammar
 ---
 

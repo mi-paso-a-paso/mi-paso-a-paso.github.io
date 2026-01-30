@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Pretérito Indefinido (Preterite)"
-date: 2024-02-02
+date: 2026-01-07
 categories: grammar
 ---
 

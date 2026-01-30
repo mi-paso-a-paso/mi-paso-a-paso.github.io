@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "School Vocabulary"
-date: 2024-03-01
+date: 2026-01-12
 categories: vocabulary
 ---
 

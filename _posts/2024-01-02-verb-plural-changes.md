@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Verbs - Plural Changes"
-date: 2024-01-02
+date: 2026-01-02
 categories: basics
 ---
 

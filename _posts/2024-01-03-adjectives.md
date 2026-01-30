@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Adjectives in Spanish"
-date: 2024-01-03
+date: 2026-01-03
 categories: basics
 ---
 

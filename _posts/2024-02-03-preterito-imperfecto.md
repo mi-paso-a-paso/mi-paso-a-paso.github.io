@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Pretérito Imperfecto (Imperfect)"
-date: 2024-02-03
+date: 2026-01-08
 categories: grammar
 ---
 

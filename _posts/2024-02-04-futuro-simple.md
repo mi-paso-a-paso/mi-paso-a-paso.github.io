@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Futuro Simple (Simple Future)"
-date: 2024-02-04
+date: 2026-01-09
 categories: grammar
 ---
 

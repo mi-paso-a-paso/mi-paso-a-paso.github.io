@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Condicional Simple (Conditional)"
-date: 2024-02-05
+date: 2026-01-10
 categories: grammar
 ---
 
