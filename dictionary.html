@@ -1,0 +1,60 @@
+---
+layout: default
+---
+
+<h2>Add a verb to your dictionary</h2> <br>
+<form id="addForm">
+    <label for="word">Дума</label>
+    <input type="text" id="word" />
+    <label for="translation">Translation</label>
+    <input type="text" id="translation" />
+    <button type="submit">Submit</button>
+</form>
+
+<br>
+<h2>List</h2>
+<div id="wordList">
+</div>
+
+<script>
+    let addForm = document.getElementById("addForm");
+    let inputWord = document.getElementById("word");
+    let inputTranslation = document.getElementById("translation");
+
+    let wordList = document.getElementById("wordList");
+    let storredWords = JSON.parse(localStorage.getItem("storredWords")) ?? [];
+
+    addForm.onsubmit = (e) => {
+        e.preventDefault();
+
+        if (storredWords != null)
+            storredWords.some((w) => { return (w.word === inputWord.value) && (w.translation === inputTranslation.value); }) ?
+                alert("Тази дума с това значение вече е добавена") :
+                addTo_wordList(inputWord.value, inputTranslation.value);
+        else
+            addTo_wordList(inputWord.value, inputTranslation.value);
+    }
+
+    function update_wordList() {
+        let html = '';
+        if (storredWords != null) {
+            for (let i = 0; i < storredWords.length; i++) {
+                let element = storredWords[i];
+                html += `<p>${element.word}</p> <t> <p>${element.translation}</p> <br>`;
+            }
+            wordList.innerHTML = html;
+        }
+    }
+    function addTo_wordList(wordVal, translationVal) {
+        let new_word = {
+            word: wordVal,
+            translation: translationVal
+        };
+        storredWords.push(new_word);
+
+        localStorage.setItem("storredWords", JSON.stringify(storredWords));
+        wordList.innerHTML += `<p>${wordVal}</p> <t> <p>${translationVal}</p> <br>`;
+    }
+
+    update_wordList();
+</script>

@@ -42,7 +42,7 @@
       }
     }
     
-    .theme-toggle {
+    .nav_button {
       background: var(--bg-secondary);
       border: 1px solid var(--border);
       border-radius: 50%;
@@ -55,7 +55,7 @@
       transition: transform 0.3s ease;
     }
     
-    .theme-toggle:hover {
+    .nav_button:hover {
       transform: scale(1.1);
     }
   }
@@ -64,7 +64,13 @@
 [data-theme=dark] .sun-icon {
   display: none;
 }
-
 [data-theme=light] .moon-icon {
   display: none;
+}
+
+[data-theme=dark] #dictionary i {
+  color: #FFC83D;
+}
+[data-theme=light] #dictionary i {
+  color: #d3a62a;
 }

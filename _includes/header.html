@@ -10,9 +10,12 @@
       {% endfor %}
     </ul>
 
-    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+    <button id="theme-toggle" class="nav_button" aria-label="Toggle theme">
       <span class="sun-icon">☀️</span>
       <span class="moon-icon">🌙</span>
+    </button>
+    <button id="dictionary" class="nav_button" aria-label="Dictionary">
+      <a href="{{ '/dictionary' | relative_path }}"><i class="fa-solid fa-language"></i></a>
     </button>
   </nav>
 </header>
