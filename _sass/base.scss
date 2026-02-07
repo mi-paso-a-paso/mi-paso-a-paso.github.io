@@ -1,3 +1,9 @@
 @import
   'base/_root',
   'base/_layout';
+
+.top-nav *,
+footer *,
+.post-category {
+  user-select: none;
+}
