@@ -4,18 +4,22 @@
       <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
     </div>
 
-    <ul class="nav-menu">
-      {% for category in site.data.categories %}
-        <li><a href="{{ category.link | relative_url }}">{{ category.title }}</a></li>
-      {% endfor %}
-    </ul>
+    <div class="nav-content">
+      <ul class="nav-menu">
+        {% for category in site.data.categories %}
+          <li><a href="{{ category.link | relative_url }}">{{ category.title }}</a></li>
+        {% endfor %}
+      </ul>
 
-    <button id="theme-toggle" class="nav_button" aria-label="Toggle theme">
-      <span class="sun-icon">☀️</span>
-      <span class="moon-icon">🌙</span>
-    </button>
-    <button id="dictionary" class="nav_button" aria-label="Dictionary">
-      <a href="{{ '/dictionary' | relative_path }}"><i class="fa-solid fa-language"></i></a>
-    </button>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="nav-button" aria-label="Toggle theme">
+          <span class="sun-icon">☀️</span>
+          <span class="moon-icon">🌙</span>
+        </button>
+        <button id="dictionary" class="nav-button" aria-label="Dictionary">
+          <a href="{{ '/dictionary' | relative_path }}"><i class="fa-solid fa-language"></i></a>
+        </button>
+      </div>
+    </div>
   </nav>
 </header>

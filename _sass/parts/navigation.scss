@@ -23,6 +23,14 @@
       color: var(--accent);
       text-decoration: none;
     }
+
+    .nav-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex: 1;
+      gap: 32px;
+    }
     
     .nav-menu {
       display: flex;
@@ -41,8 +49,13 @@
         color: var(--accent);
       }
     }
+
+    .nav-actions {
+      display: flex;
+      gap: 12px;
+    }
     
-    .nav_button {
+    .nav-button {
       background: var(--bg-secondary);
       border: 1px solid var(--border);
       border-radius: 50%;
@@ -55,7 +68,7 @@
       transition: transform 0.3s ease;
     }
     
-    .nav_button:hover {
+    .nav-button:hover {
       transform: scale(1.1);
     }
   }
