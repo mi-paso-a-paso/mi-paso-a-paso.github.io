@@ -16,7 +16,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 32px;
-    
+
     .nav-brand a {
       font-size: 24px;
       font-weight: 700;
@@ -70,6 +70,39 @@
     
     .nav-button:hover {
       transform: scale(1.1);
+    }
+  }
+}
+
+.dropDownMenu {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  
+  span {
+    width: 25px;
+    height: 3px;
+    background: var(--text-primary);
+    display: block;
+    border-radius: 50px;
+    transition: 0.5s;
+  }
+
+  &.open {
+    & span:first-child {
+      -webkit-transform: rotate(-45deg) translate(6px, 8px);
+      transform: rotate(45deg) translate(6px, 8px);
+    }
+  
+    & span:nth-child(2) {
+      opacity: 0;
+    }
+  
+    & span:last-child {
+      -webkit-transform: rotate(45deg) translate(4px, -5px);
+      transform: rotate(-45deg) translate(4px, -5px);
     }
   }
 }

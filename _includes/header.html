@@ -4,6 +4,12 @@
       <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
     </div>
 
+    <button id="dropDownMenu" class="dropDownMenu" aria-label="Drop-down menu for mobile">
+      <span class="bar1"></span>
+      <span class="bar2"></span>
+      <span class="bar3"></span>
+    </button>
+
     <div class="nav-content">
       <ul class="nav-menu">
         {% for category in site.data.categories %}
