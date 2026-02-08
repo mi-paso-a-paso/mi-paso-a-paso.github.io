@@ -54,10 +54,11 @@
     opacity: 0;
     transition: all 1s ease-in-out;
   }
-
+  
   .nav-content.active {
     max-height: 500px;
     opacity: 1;
+    box-shadow: 0 2px 4px var(--shadow);
   }
 
   .nav-menu {
