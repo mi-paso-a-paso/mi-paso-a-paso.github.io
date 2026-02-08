@@ -1,5 +1,5 @@
 User-agent: *
-Disallow: /dictionary$
+Disallow: /dictionary.html$
 Allow: /
 
 Sitemap: https://mi-paso-a-paso.github.io/sitemap.xml
